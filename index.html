@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estimator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <h1><b> JPG Cement Usage Estimator</b></h1><br>
+            <br>
+
+          
+
+        </div><br><br>
+
+        <ul>
+            <h3> Column Parameter (m)</h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="number" class="dia" value="" placeholder="diameter">
+                </div>
+                <div class="col-sm-4">
+                    <input type="number" class="thk" value="" placeholder="thickness">
+                </div>
+               
+            </div><br>
+           
+        </ul>
+
+
+        <ul>
+            <h3> Repalcement Rate (%)</h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="number" class="rr" value="" placeholder="default: 60%">
+                </div>
+                
+            </div><br>
+            
+        </ul>
+
+
+        <div class="p-3 mb-2 bg-info text-white">
+            <div class="row">
+                <h3 class="col-sm-6" id="vol" .lead>Treatment Volume:</h3>
+                <h3 class="col-sm-6" id="Gvol" .lead>Grout Volume:</h3>
+            </div>
+        </div>
+
+        <div class="p-3 mb-2 bg-danger text-white">
+            <div class="row">
+                <h3 class="col-sm-4" id="cement" .lead>Cement Usage:</h3>
+                
+            </div>
+        </div>
+        
+        <br>
+        <h3>Operation Parameter</h3>
+
+        <div class="p-3 mb-2 bg-dark text-white">
+            <div class="row">
+                <h3 class="col-sm-6" id="bahan" .lead>RPM:</h3>
+                <div class="col-sm-6">
+                    <u>
+                        <h3 id="priceBahan" .lead>6-8</h3>
+                    </u>
+                </div>
+            </div>
+
+            <div class="row">
+                <h3 class="col-sm-6" id="flow" .lead>Flowrate (l/min):</h3>
+                <div class="col-sm-6">
+                    <input type="number" class="flowrate" value="" placeholder="">
+                </div>
+            </div>
+
+            <div class="row">
+                <h3 class="col-sm-6" id="step" .lead>Step (mm):</h3>
+                <div class="col-sm-6">
+                    <input type="number" class="steprate" value="" placeholder="eg:25,30,35,40">
+                </div>
+            </div>
+
+           
+            </div>
+
+        <div class="p-3 mb-2 bg-warning text-dark">
+            <div class="row">
+                <h3 class="col-sm-6" id="lifttiming" .lead>Lifting Timing:</h3>
+                <div class="col-sm-6">
+                    <u>
+                        <h3 id="timing" .lead>s</h3>
+                    </u>
+                </div>
+            </div>
+        </div>
+        <button onclick="calculate()">Calculate </button>
+        <button onclick="design()">Design </button>
+        <button onclick="myFunction()">Print this page</button>
+    </div>
+
+     
+        
+        <script type="text/javascript" src="calculate.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcyyWSd6ETju45EKjArNtJXAJt5w1xecQ&callback=initMap"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script><br><br><br>
+       
+
+</body>
+
+</html>
