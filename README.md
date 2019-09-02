@@ -1,2 +1,2 @@
 # estimator
-https://harpercham.github.io/estimator/
+https://harpercham.github.io/JGP-Estimator/
